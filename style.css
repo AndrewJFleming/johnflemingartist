@@ -1,0 +1,617 @@
+/*
+Theme Name: John Fleming Artist Theme
+Author: AJF
+Description: Custome WP theme for John Fleming's artist/architect portfolio site.
+Version: 3.0
+*/
+
+/* 
+font-family: 'EB Garamond', serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Source Serif Pro', serif; 
+
+font-family: Georgia, Times, "Times New Roman", serif;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+*/
+
+body {
+  background-color: black;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color:#ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  position: relative;
+  padding: 0;
+}
+
+/* labels on the bottom right of page to show which template part is being referenced */
+.pageTypeHint {
+  margin: 0;
+  padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.25);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+.pageTypeHint2 {
+  margin: 0;
+  padding: 5px 10px;
+  color: rgba(255, 255, 255, 0.25);
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  z-index: 1000;
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Optima', sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  color: #ed8137;
+}
+a:hover {
+  color: #ffaa71;
+}
+/* Remove indications that an item is clickable when href value is "#". */
+a[href="#"] { 
+  text-decoration: none;
+  cursor: default;
+ }
+
+hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+/* Keep footer at bottom of page */
+.page-wrap {
+  min-height: 100vh;
+}
+
+.taxonomy-title,
+.page-title {
+  font-family: 'Optima', sans-serif;
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  font-size: 1.5em;
+}
+
+
+
+/* START Header */
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #000000 !important;
+}
+
+nav .container {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center!important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+
+
+/* Bootstrap menu dropdown styling */
+.dropdown-menu {
+  background-color: black;
+  border: 1px solid  rgba(255, 255, 255, 0.75);
+  border-radius: 0%;
+}
+.dropdown-item {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.75);
+}
+.dropdown-item:hover {
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* END Header */
+
+
+
+
+/* START Footer */
+
+footer {
+  background-color: rgb(0, 0, 0);
+  margin-top: 2rem;
+  padding: 8px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+footer .menu-footer-menu-container {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+footer .bottom-bar {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+}
+
+footer .bottom-bar li a {
+  padding: 2px 10px;
+  color: #cccccc;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  display:block;
+}
+
+.copyright p {
+  opacity: .35;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+/* END Footer */
+
+
+
+
+/* START Page Nav */
+
+.page-nav {
+  text-align: center;
+  margin: 3rem 0 0;
+  font-weight: 100;
+}
+
+.page-nav .page-numbers {
+  color:#cccccc;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.page-nav .current {
+  color:#ffffff;
+  font-weight: 900;
+}
+
+.page-nav a:hover {
+  text-decoration: underline;
+}
+
+/* END Page Nav */
+
+
+
+
+/* START Front Page */
+
+.front-page-title {
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+  font-size: 1.5em;
+}
+
+.front-content {
+  /* Uncomment below to add white border around homepage welcome message. */
+  /* border: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5); */
+  /* padding: 10px 10px 0; */
+  margin: 0;
+  clear: both;
+  overflow: hidden;
+}
+
+/* Styling added to welcome message in case ACF title is excluded. */
+.front-content-mt {
+  margin-top: 4vh;
+}
+
+.front-content h1,
+.front-content h2,
+.front-content h3,
+.front-content h4,
+.front-content h5 {
+  color:#ffffff;
+  margin-bottom: 3vh;
+  font-size: 1.5em;
+}
+
+.front-portrait {
+  float: right;
+  max-width: 180px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.about-portrait {
+  float: right;
+  max-width: 250px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.front-item-title,
+.front-item-title:hover {
+  color: #ffffff;
+  font-family: 'Optima', sans-serif;
+}
+
+.credit {
+  color:rgba(255, 255, 255, 0.5);
+  font-size: small;
+}
+/* END Front Page */
+
+
+
+
+/* START Portfolio Archive */
+
+/* START Portfolio Menu */
+
+.widget_nav_menu {
+  list-style: none;
+  padding-top: 20px;
+}
+
+.widget_nav_menu h4 {
+  display: none;
+}
+
+#menu-portfolio-menu {
+  list-style-type: none;
+  margin: 12px 0 2em;
+  padding: 0px;
+  display: flex;
+}
+
+#menu-portfolio-menu li a {
+  padding: 0px 10px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color:rgba(255, 255, 255, 0.75);
+}
+
+#menu-portfolio-menu li:first-child a {
+  padding-left: 0;
+}
+
+#menu-portfolio-menu .current-menu-item a {
+font-weight: 700;
+color:#fff!important;
+}
+
+#menu-portfolio-menu li:after {
+  content: "/";
+  color:rgba(255, 255, 255, 0.75);
+  right: 0;
+  font-size: 11px;
+}
+
+#menu-portfolio-menu li:last-of-type:after {
+content: none;
+}
+
+/* END Portfolio Menu */
+
+  /* START Masonry */
+
+    /* START Masonry grid items */
+
+    .grid-container {
+      columns: 4 200px;
+      column-gap: 7px;
+      width: 100%;
+      margin: 0px auto 0;
+    }
+
+    .grid-item {
+      position: relative;
+      width: 150px;
+      margin: 0 7px 7px 0;
+      display: inline-block;
+      width: 100%;
+      transition: all .25s ease-in-out;
+    }
+
+    .grid-item img:hover {
+      opacity: .5;
+      transition: all .25s ease-in-out;
+    }
+
+    .grid-item img {
+      width: 100%;
+      transition: all .25s ease-in-out;
+    }
+
+    /* END Masonry grid items */
+
+    /* START Archive Thumbnail Details */
+    .details-wrapper {
+      position: relative;
+      padding: 0;
+      display:block;
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      background-color:rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      z-index: 10;
+      opacity: 0;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+    .details:hover {
+      opacity:1;
+    }
+
+    .details .caption {
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      padding-top: 10px;
+    }
+
+    .details .title {
+      color:#ffffff;
+      margin: 0;
+    }
+
+    .details .category {
+      color:rgb(202, 202, 202);
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .details .grid-item-cat {
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    /* END Archive Thumbnail Details */
+
+  /* END Masonry */
+
+/* END Portfolio Archive */
+
+
+
+/* START Single */
+
+.gallery-item-caption {
+  font-weight: 400;
+  padding: 0;
+  margin-top: 5px 0 0;
+  color: #8f8f8f;
+  font-size: small;
+}
+
+  /* START Load gallery thumbnails */
+  /* Interaction with gallery items disabled until all data loaded */
+  .gallery-item {
+    pointer-events: none;
+  }
+
+  .gallery {
+    opacity: .15;
+  }
+
+  .gallery-ul {
+    position: relative;
+  }
+
+  .loader {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    display: auto;
+    z-index: 100;
+    border: 8px solid rgba(243, 243, 243, .1);
+    border-top: 8px solid #ff7b00;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* END Load gallery thumbnails */
+
+
+
+
+  /* START Embed Styles */
+
+  .iframe-wrapper { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  } 
+
+  .iframe-wrapper iframe,
+  .iframe-wrapper object,
+  .iframe-wrapper embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iframe-wrapper iframe { 
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* END Embed Styles */
+
+/* END Single */
+
+
+
+
+/* START Contact Page */
+
+label,
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+  width: 100%!important;
+}
+
+/* END Contact Page */
+
+
+
+
+/* START Media queries */
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 767px) {
+
+.dropdown-menu {
+  border: initial!important;
+}
+
+
+
+/* START Portfolio Menu */
+
+.widget_nav_menu h4 {
+  display: inline;
+  font-size: 1.25rem;
+}
+
+.widget_nav_menu {
+  list-style: none;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#menu-portfolio-menu {
+  list-style-type: none;
+  margin: 6px 0 2em;
+  padding: 0px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#menu-portfolio-menu li a {
+  padding: 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color:rgba(255, 255, 255, 0.75);
+}
+
+#menu-portfolio-menu li:first-child a {
+  padding-left: auto;
+}
+
+#menu-portfolio-menu .current-menu-item a {
+  font-weight: 700;
+  color:#fff!important;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#menu-portfolio-menu li a {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 0 3px;
+}
+
+#menu-portfolio-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color:rgba(255, 255, 255, 1);
+}
+
+#menu-portfolio-menu li:after {
+  content: none;
+}
+
+/* END Portfolio Menu */
+
+
+
+/* Contact */
+.contact-image {
+  display: none;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 716px) {
+
+  /* Condensed footer menu */
+  footer .bottom-bar {
+    line-height: normal;
+    display: block;
+  }
+  footer .bottom-bar li a {
+    font-size: 13px;
+  }
+
+  .about-portrait {
+    max-width: 180px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  /* Floated Images */
+  .front-portrait,
+  .about-portrait {
+    display: none;
+  }
+}
+
+/* END Media queries */

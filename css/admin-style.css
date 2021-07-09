@@ -1,0 +1,25 @@
+/* Custom color for 'Pages' menu item */
+.wp-menu-image.dashicons-before.dashicons-admin-page:before {
+    color: rgb(179, 177, 109) !important;
+}
+/* Custom color for Frequently used 'All Pages' subsection menu item */
+#menu-pages .wp-first-item a {
+    color: rgb(179, 177, 109) !important;
+}
+
+
+
+
+/* Custom color for 'Portfolio Items' CPT menu item */
+.wp-menu-image.dashicons-before.dashicons-art:before {
+    color: rgb(212, 209, 27) !important;
+}
+
+/* Custom color for Frequently used 'Portfolio Items' subsection menu item */
+#menu-posts-portfolio ul > li:nth-child(2) a {
+    color: rgb(212, 209, 27) !important;
+}
+/* Custom color for Frequently used 'Portfolio Category' subsection menu item */
+/* #menu-posts-portfolio ul > li:nth-child(5) a {
+    color: rgb(179, 177, 109) !important;
+} */
