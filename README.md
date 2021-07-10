@@ -13,7 +13,7 @@ Custom WP theme designed for John Fleming's artist portfolio.
 ### Help
 
 - Magnific Popup gallery slider will load any images you attach for a Portfolio Item post but will only display them if uploaded as gallery type attachments
-  <img src="img/instruction.jpg" alt="gallery attachment instructions">
+  <img src="img/instructions.jpg" alt="gallery attachment instructions">
 
 ## Author
 
