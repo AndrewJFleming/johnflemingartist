@@ -19,7 +19,7 @@ Custom WP theme designed for John Fleming's artist portfolio.
 
 - [Andrew J Fleming](http://andrewjfleming.com/)
 
-<div align="center" border="1px solid black">
+<div align="center">
   <a href="http://andrewjfleming.com/">
     <img src="img/ajf-logo-white.png" alt="AJF Logo" height="80">
   </a>
